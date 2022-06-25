@@ -5,12 +5,26 @@ body{
     background-color: rgb(219, 208, 189);
     text-decoration: none!important;  
     padding-top: 90px;
+    margin-bottom: 200px;
  
 }
+html{
+    position: relative;
+    min-height: 100%;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 160px;
+    background-color: #c2bfb0 !important;
+  }
+
 
 header{
     
-     background-color:rgb(194, 194, 184) ;
+     background-color:rgb(158, 158, 147) ;
      border-radius: 0;
      border: 0;
      padding-right: 0px;
@@ -24,7 +38,12 @@ header{
     height: auto;
     max-height: 680px;
     max-width: 992px;
+    
   }
+  #delivery, #about_us{
+      padding: 25px;
+  }
+  
 #logo-img{
 
     margin: 0px 0px 0px 0px;
@@ -65,6 +84,31 @@ a{
 #home-tiles{
     margin-top: 15px;
 }
+#menu-tile{
+    background: url(menutile_img.jpg) no-repeat;
+    background-position: center;
+}
+#spetials-tile{
+    background: url(specialtile_img.jpg) no-repeat;
+    background-position: center;
+}
+#menu-tile span, #spetials-tile span, #map-tile span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: x-large;
+    background-color: rgb(167, 167, 152);
+    color: black;
+    opacity: .8;
+
+}
+#adress, #hours{
+    font-size:smaller;
+    padding: 20px;
+}
+
 /*
 .navbar-brand h1{
     font-size: 38px;

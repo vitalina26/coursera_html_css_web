@@ -10,11 +10,11 @@
             </style>
         <link rel="stylesheet" href="css_for_restaurant.css">
     </head>
-    <body>
+    <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-        <header>
-            <nav class="navbar  fixed-top navbar-expand-lg bg-light">
-                <div class="container-fluid justify-content-end">
+        <header id="header_">
+            <nav  class="navbar  fixed-top navbar-expand-lg bg-light">
+                <div class="container-fluid justify-content-end" id="header_">
                     <a class="navbar-brand flex-grow-1" href="index.html">
                         <img id="logo-img" src="logo.png" alt="logo-img" width="120" height="100" class="d-inline-block align-text-top float-start d-none d-md-block "><h1 id="logo-name">ЇСТЕТИКА</h1>
                       </a>
@@ -24,13 +24,13 @@
                   <div class="collapse navbar-collapse" id="navbarNav">
                     <ul id = "navs-list" class="navbar-nav" > 
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Про нас</a>
+                        <a class="nav-link" href="#about_us">Про нас</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Меню</a>
+                        <a class="nav-link" href="#menu-tile">Меню</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Доставка</a>
+                        <a class="nav-link" href="#delivery">Доставка</a>
                       </li>
                     </ul>
                   </div>
@@ -90,31 +90,83 @@
                       <span class="carousel-control-next-icon"></span>
                     </button>
                   </div>
+                  <div class="row" id="about_us">
+                    <h2>Про нас</h2>
+                    <p>Їстетика – це концептуальний гастрозаклад, який формує революційно нове уявлення про заклад швидкої їжі. Наш формат - їдальня нового типу.</p>
+                    <div class="col-md-6 col-sm-6 col-12">
+                        <img src="about _us_600_750__img.jpg" alt="about" class="responsive ">
+                    </div>
+                    <p class = "col-lg-3 col-md-3 col-sm-6 col-12">Ми відкрились на першому поверсі на території житлового комплексу, дизайн розробляли з використанням екоматеріалів: глини, льону, натурального дерева, переробленого пластику, ручного гончарства. Заклад має площу 145 квадратних метрів. <span class="d-none d-lg-block d-xxl-none"><br> Під будь-який настрій: на побачення, на свято, на зустріч з подружками, для будь-яких яскравих подій або просто, щоб підкреслити їстетичну страву. Справжній їстет відпочиває з нами! </span></p>
+                     <p class = "col-lg-3 col-md-3 col-sm-12 col-12">Пропонуємо сніданки, закуски, основні страви, салати, пироги та десерти. Страви можна обирати з вітрини для замовлення з собою або ж у закладі. Також можна замовити доставку. <span class="d-none d-lg-block d-xxl-none"><br>У  Їстетиці можливе бронювання столиків.  Це ж так зручно! Особливо, якщо живеш на іншому кінці міста. Бронюй бажаний столик, вказуй годину та кількість гостей і він твій. </span></p>
+                    </div>
+                 </div>
+                </div>
+                </div>
+
           <!-- <div class="d-flex justify-content-center">
                 <img src="\1200_680main_img.jpg" alt="Nature" class="responsive ">
                 <img class= "d-block mx-auto " src="\768_428main_img.jpg" alt="main_img">-->
                 <div class="row" id="home-tiles">
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <a href="menu-categories.html" "><div id="menu-tile"><span>menu</span>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <a href="menu-categories.html" "><div id="menu-tile"><span>МЕНЮ</span>
                         </div>
                         </a>
                      </div>
-                     <div class="col-md-4 col-sm-6 col-xs-12">
-                        <a href="single-category.html" "><div id="spetials-tile"><span>menu</span>
+                     <div class="col-md-4 col-sm-6 col-12">
+                        <a href="spetials.html"><div id="spetials-tile"><span>ОСОБЛИВЕ</span>
                         </div>
                         </a>
                      </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12">
-                        <a href="" target="_blank">
+                    <div class="col-md-4 col-sm-12 col-12">
+                        <a href="https://goo.gl/maps/P3wUvyXuan2ZZNNG7" target="_blank">
                             <div id="map-tile">
-                                <span>map</span>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.386503851622!2d30.52516421744385!3d50.415270099999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf3e6287a1df%3A0x169a81318c1e30fd!2z0LLRg9C70LjRhtGPINCf0YDQtdC00YHQu9Cw0LLQuNC90YHRjNC60LAsIDU3LCDQmtC40ZfQsiwgMDIwMDA!5e0!3m2!1suk!2sua!4v1656080167756!5m2!1suk!2sua" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <span>КАРТА</span>
                             </div>
                         </a>
                     </div>
                 </div>
+                <div class="row d-flex justify-content-center" id="delivery" style="padding: 40px;">
+                    <h2 style="text-align:center; padding-bottom: 15px;" >Доставка</h1>
+                    <div class=" col-lg-6 col-md-6 col-sm-6 col-12">
+                        <p>Зголоднів? Як ми тебе розуміємо 
+                            Тому доставка смачної їжі вже поруч.
+                            <br>
+                            Ми можемо доставити їжу у будь-яку точку Києва.
+                            А в радіусі 1 км ( від суми 150 грн) та по місту при замовленні від 600 грн – БЕЗКОШТОВНА
+                            <br>
+                            Не зволікай та замовляй вже!
+                            Декілька кліків і ми у тебе.
+                            <br>тел +38 093 000 0534
+                            <br>
+                            — у Їстетика.</p>
+                    </div>
+                    <div class=" col-lg-3 col-md-6 col-sm-6 col-12">
+                        <img src="delivery600_750__img.jpg" alt="delivery" class="responsive delivery_img ">
+                    </div>
+                  
+                </div>
             </div>
-
+            
         </div>
         </main>
+        <footer id="footer_">
+            <div class="container">
+                <div class="row">
+                    <div id="hours" class="col-md-6 col-sm-6 col-6">
+                        <span>Графік Роботи</span><br>
+                        Нд-Чт: 11:15 - 22:00<br>
+                        Пт: 11:15 - 00:00<br>
+                        Сб: Вихідний
+                    </div>
+                    <div id="adress" class="col-md-6 col-sm-6 col-6">
+                        <span>Адреса</span><br>
+                        Київ, вул.Предславинська 57<br>
+                        Либідська
+                    </div>
+
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
