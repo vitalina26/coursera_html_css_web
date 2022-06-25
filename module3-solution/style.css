@@ -1,1 +1,51 @@
+body{
+    font-family: 'Playfair Display', serif;
+    font-size: medium;
+    background-color: rgb(219, 208, 189);
+    text-decoration: none!important;  
+    padding-top: 90px;
+    margin-bottom: 100px;
+ 
+}
+html{
+    position: relative;
+    min-height: 100%;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 100px;
+    background-color: #c2bfb0 !important;
+  }
 
+
+header{
+    
+     background-color:rgb(158, 158, 147) ;
+     border-radius: 0;
+     border: 0;
+     padding-right: 0px;
+}
+.navbar{
+    padding-right: 0px;
+    margin-right: 0px;
+}
+
+.navbar-brand{
+    font-size: 30px;
+    text-shadow: 1px 1px 1px rgb(167, 167, 152);
+   
+}
+
+#navs-list{
+    margin-right: 0px;
+    padding-right: 0px;
+}
+a{
+    text-decoration: none!important;  
+}
+#home-tiles{
+    margin-top: 15px;
+}
